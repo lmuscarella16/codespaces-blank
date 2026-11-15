@@ -1,0 +1,126 @@
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #FFFFFF; 
+  border: 2px solid #D4A25F; /* Golden Wheat */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(66, 45, 45, 0.08);
+}
+
+/* Fieldsets & Legends */
+fieldset {
+  border: 1px solid #916B4D; /* Sourdough Brown */
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #FEFBF3; /* Creamy Dough */
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: #916B4D; /* Sourdough Brown */
+  padding: 0 0.5rem;
+}
+
+form fieldset > div {
+  margin-bottom: 1.25rem;
+}
+
+form fieldset > div:last-child {
+  margin-bottom: 0;
+}
+
+/* Labels & Radio Group Heading */
+label,
+fieldset p {
+  display: block;
+  font-weight: 600;
+  color: #422D2D; /* Dark Rye */
+  margin-bottom: 0.4rem;
+}
+
+input[type="radio"] {
+  accent-color: #916B4D;
+  margin-right: 0.4rem;
+}
+
+label:has(input[type="radio"]) {
+  display: inline-flex;
+  align-items: center;
+  font-weight: normal;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+/* Text, Email, Date Inputs*/
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+  width: 100%;
+  box-sizing: border-box; 
+  padding: 0.65rem 0.85rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #422D2D; /* Dark Rye */
+  background-color: #FFFFFF;
+  border: 1.5px solid #916B4D; /* Sourdough Brown */
+  border-radius: 4px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Interactive Focus Highlight */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #D4A25F; /* Golden Wheat */
+  box-shadow: 0 0 0 3px rgba(212, 162, 95, 0.25);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit & Reset Buttons */
+form > div:last-child {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+input[type="submit"] {
+  background-color: #916B4D; /* Sourdough Brown */
+  color: #FEFBF3; /* Creamy Dough */
+  border: 2px solid #916B4D;
+}
+
+input[type="submit"]:hover {
+  background-color: #D4A25F; /* Golden Wheat */
+  border-color: #D4A25F;
+  color: #422D2D; /* Dark Rye */
+}
+
+input[type="reset"] {
+  background-color: transparent;
+  color: #916B4D;
+  border: 2px solid #916B4D;
+}
+
+input[type="reset"]:hover {
+  background-color: rgba(145, 107, 77, 0.1);
+}

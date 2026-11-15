@@ -1,0 +1,97 @@
+:root {
+  --bg-color: #FEFBF3;      /* Creamy Dough */
+  --text-color: #422D2D;    /* Dark Rye */
+  --accent-primary: #D4A25F;/* Golden Wheat */
+  --accent-secondary: #916B4D;/* Sourdough Brown */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  max-width: 800px;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    color: var(--accent-primary);
+    margin-top: 1.5rem;
+    
+}
+
+h2 {
+    text-align: center;
+    font-family: sans-serif;
+    color: var(--accent-primary);
+    margin-top: 2rem;
+}
+
+p {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--accent-secondary);
+  padding: 1rem;
+  footer, nav {
+  background-color: var(--accent-secondary);
+  color: var(--bg-color);
+}
+}
+
+nav a {
+  background-color: var(--accent-secondary);
+  color: var(--bg-color);
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent-primary);
+}
+
+footer {
+  background-color: var(--accent-secondary);
+  color: var(--bg-color);
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem;
+}
+
+footer, nav {
+  background-color: transparent;
+  padding: 0;
+}
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (min-width: 760px) {
+  nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
